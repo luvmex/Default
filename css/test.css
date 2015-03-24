@@ -1,0 +1,133 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.clearfix:before, .clearfix:after {
+  content: '';
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+html {
+  font-size: 75%;
+  line-height: 1.8333333333em;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.departments-content:after, .departments-content:before {
+  content: "";
+  position: absolute;
+  opacity: 0;
+  box-sizing: border-box;
+  -moz-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  -webkit-transition: all 0.4s ease;
+  -webkit-transition-delay: 0s;
+  transition: all 0.4s ease 0s;
+}
+
+.departments-content {
+  background: rgba(150, 150, 150, 0.6);
+  -moz-transition: background 0.2s ease 0s;
+  -o-transition: background 0.2s ease 0s;
+  -webkit-transition: background 0.2s ease;
+  -webkit-transition-delay: 0s;
+  transition: background 0.2s ease 0s;
+}
+.departments-content:after {
+  top: 0px;
+  left: 0px;
+  height: 0%;
+  width: 100%;
+  border-left: 5px solid #f0f0f0;
+  border-right: 5px solid #f0f0f0;
+}
+.departments-content:before {
+  left: 0px;
+  top: 0px;
+  height: 100%;
+  width: 0%;
+  border-top: 5px solid #f0f0f0;
+  border-bottom: 5px solid #f0f0f0;
+}
+.departments-content:hover {
+  background: rbga(150, 150, 150, 0.2);
+}
+.departments-content:hover:before {
+  width: 100%;
+  opacity: 1;
+}
+.departments-content:hover:after {
+  height: 100%;
+  opacity: 1;
+}

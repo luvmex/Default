@@ -1,0 +1,104 @@
+
+@import "variable";
+@import "susy";
+@import "breakpoint";
+// @import "susyone";
+
+
+$susy: (
+  flow: ltr,
+  math: fluid,
+  output: float,
+  gutter-position: inside,
+  container: auto,
+  container-position: center,
+  columns: 4,
+  // column-width: 80px,
+  gutters: 0,
+  // column-width: 60px,
+  global-box-sizing: border-box,
+  last-flow: to,
+  debug: (
+    image: false,
+    // color: rgba(#66f, .25),
+    // output: background,
+    // toggle: top right,
+  ),
+  // use-custom: (
+    // background-image: true,
+    // background-options: false,
+    // box-sizing: true,
+    // clearfix: false,
+    // rem: true,
+  // )
+);
+
+$pad: (
+  columns: 8,
+  // column-width: 60px,
+  gutters: 0,
+  math: fluid,
+  output: float,
+  gutter-position: split,
+  );
+
+$desktop_inner: (
+  flow: ltr,
+  math: fluid,
+  output: float,
+  gutter-position: split,
+  // container: auto,
+  // container-position: center,
+  columns: 14,
+  column-width: 70px,
+  gutters: 1/5,
+  // global-box-sizing: border-box,
+  last-flow: to,
+  );
+
+
+$desktop: (
+  math: fluid,
+  output: float,
+  gutter-position: split,
+  columns: 16,
+  gutters: 1/3,
+  last-flow: to,
+  );
+
+
+$pad_break: 640px;
+$desktop_break: 1280px;
+
+
+@include border-box-sizing;
+// @include adjust-font-size-to($big);
+
+
+// $susy: (
+//   flow: ltr、rtl,
+//   math: fluid、static,
+//   output: float、isolate,
+//   gutter-position: after,
+//   container: auto,
+//   container-position: center、left、right,
+//   columns: 4,
+//   gutters: .25,
+//   column-width: false 自訂,
+//   global-box-sizing: content-box,
+//   last-flow: to,
+//   debug: (
+//     image: hide,
+//     color: rgba(#66f, .25),
+//     output: background,
+//     toggle: top right,
+//   ),
+//   use-custom: (
+//     background-image: true,
+//     background-options: false,
+//     box-sizing: true,
+//     clearfix: false,
+//     rem: true,
+//   )
+// );
+

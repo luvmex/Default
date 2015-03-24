@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+%html{:lang => "en"}
+%head
+	%link{:rel => "stylesheet",:href  => "css/index.css"}
+%body
+	.container
+		- 2.times do
+			.input_jiro
+				%input.input_field{:type => "text", :id => "input-00", :autofocus => true}
+				%label.input_label{:for => "input-00"}
+					.input_content= lorem_name
+				
+

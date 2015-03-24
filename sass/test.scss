@@ -1,0 +1,109 @@
+@import "import"; 
+
+%ab{
+	content:"";
+	position: absolute;
+	// margin: 5% 0 0 5%;
+	opacity: 0;
+	box-sizing: border-box;
+	// border: 1px solid rgba(200,200,200,0.3);
+	@include transition(all 0.4s ease 0s);
+}
+
+%ad-hover{
+	width: 100%;
+	height: 100%;
+	opacity: 1;
+}
+
+
+.departments-content{
+	background: rgba(150,150,150,0.6);	
+	@include transition(background 0.2s ease 0s);
+	&:after{
+		@extend %ab;
+		top: 0px;
+		left: 0px;
+		height: 0%;
+		width: 100%;
+		border-left: 5px solid rgba(240,240,240,1);
+		border-right: 5px solid rgba(240,240,240,1);
+	}
+	&:before{
+		@extend %ab;
+		left: 0px;
+		top: 0px;
+		height: 100%;
+		width: 0%;
+		border-top: 5px solid rgba(240,240,240,1);
+		border-bottom: 5px solid rgba(240,240,240,1);
+	}
+	&:hover{
+		background: rbga(150,150,150,0.2);
+		&:before{
+			// @extend %ad-hover;
+			width: 100%;
+			opacity: 1;
+		}
+		&:after{
+			// @extend %ad-hover;
+			height: 100%;
+			opacity: 1;
+		}
+	}
+}
+
+
+
+// .departments {
+// 	// background: rgba(150,150,150,0.6);
+// 	height: 100%;
+// 	width: auto;
+// 	a{
+// 		width: 100%;
+// 		height: 100%;
+// 		position: relative;
+// 	}
+// 	.row{
+// 		width: 100%;
+// 		height: 100%;
+// 	}
+// 	.row:after {
+// 		@extend %ab;
+// 		background: rgba(50,50,50,0.2);
+// 		padding: 20px;
+// 		width: 0px;
+// 		border-top: 1px solid rgba(220,220,220,0.8);
+// 		border-bottom: 1px solid rgba(220,220,220,0.8);
+// 		@include transition(all 0.18s ease 0s);
+// 	}
+// 	// a:after{
+// 		// @extend %ab;
+// 		// background: rgba(50,50,50,0.6);
+// 		// padding: 20px;
+// 		// border-top: 1px solid rgba(220,220,220,0.8);
+// 		// border-bottom: 1px solid rgba(220,220,220,0.8);
+// 	// }
+// 	// a:before{
+// 	// 	@extend %ab;
+// 	// 	padding: 20px;
+// 	// 	border-left: 1px solid rgba(220,220,220,0.8);
+// 	// 	border-right: 1px solid rgba(220,220,220,0.8);
+// 	// }
+// 	img{
+// 		// @include transition(padding 0.2s ease 0s);
+// 		// &:after{
+// 			// @extend %ab;
+// 			// background: black;
+// 		// }
+// 	}
+// 	&:hover{
+// 		.row:after{
+// 			width: 100%;
+// 			opacity: 0.9;
+// 		}
+// 		img{
+// 			// padding: 10px;
+// 		}
+// 	}
+// }
