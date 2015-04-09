@@ -89,147 +89,63 @@ html, body {
   background: white;
 }
 
-.input_jiro {
-  position: relative;
-  display: block;
-  margin: 3em 1em 5em 1em;
+.ananymouse2 {
+  width: 60px;
   height: 30px;
-  max-width: 350px;
-  width: calc(100% - 2em);
-  font-family: "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  vertical-align: top;
-  z-index: 1;
-}
-.input_jiro .input_field {
-  position: relative;
-  displag: block;
-  float: left;
-  padding: 0.85em 0.5em;
-  width: 100%;
-  color: #646464;
-  border: none;
-  -moz-border-radius: none;
-  -webkit-border-radius: none;
-  border-radius: none;
   background: transparent;
-  opacity: 0;
-  -moz-transition: opacity 0.17s ease-in-out 0s;
-  -o-transition: opacity 0.17s ease-in-out 0s;
-  -webkit-transition: opacity 0.17s ease-in-out;
-  -webkit-transition-delay: 0s;
-  transition: opacity 0.17s ease-in-out 0s;
-}
-.input_jiro .input_field:focus {
-  opacity: 1;
-  -moz-transition-delay: 0.3s;
-  -o-transition-delay: 0.3s;
-  -webkit-transition-delay: 0.3s;
-  transition-delay: 0.3s;
-  outline: none;
-}
-.input_jiro .input_label {
-  position: absolute;
-  left: 0px;
-  display: inline-block;
-  text-align: left;
-  pointer-events: none;
-  float: right;
-  width: 100%;
-  height: 100%;
-  color: #646464;
-  -moz-user-select: -moz-none;
-  -ms-user-select: none;
-  -webkit-user-select: none;
-  user-select: none;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-touch-callout: none;
-}
-.input_jiro .input_label:before {
-  content: ' ';
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  height: 100%;
-  border-top: 2px solid gainsboro;
-  -moz-transform: translate3d(0, 100%, 0) translate3d(0, -2px, 0);
-  -ms-transform: translate3d(0, 100%, 0) translate3d(0, -2px, 0);
-  -webkit-transform: translate3d(0, 100%, 0) translate3d(0, -2px, 0);
-  transform: translate3d(0, 100%, 0) translate3d(0, -2px, 0);
-  -moz-transition: -moz-transform 0.17s ease 0.2s;
-  -o-transition: -o-transform 0.17s ease 0.2s;
-  -webkit-transition: -webkit-transform 0.17s ease;
-  -webkit-transition-delay: 0.2s;
-  transition: transform 0.17s ease 0.2s;
-}
-.input_jiro .input_label:after {
-  content: ' ';
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  background: gainsboro;
-  -moz-transform: scale3d(1, 0, 1);
-  -ms-transform: scale3d(1, 0, 1);
-  -webkit-transform: scale3d(1, 0, 1);
-  transform: scale3d(1, 0, 1);
-  -webkit-transform-origin: 50% 0%;
-  -moz-transform-origin: 50% 0%;
-  transform-origin: 50% 0%;
-  -moz-transition: -moz-transform 0.17s ease 0s;
-  -o-transition: -o-transform 0.17s ease 0s;
-  -webkit-transition: -webkit-transform 0.17s ease;
-  -webkit-transition-delay: 0s;
-  transition: transform 0.17s ease 0s;
-}
-.input_jiro .input_content {
+  margin: 0px auto;
   position: relative;
+}
+.ananymouse2:after {
+  content: '';
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  height: 2px;
+  width: 42px;
+  background: #969696;
+  border-radius: 50px;
+}
+.ananymouse2 h6 {
+  position: absolute;
+  left: 70px;
+  top: 4px;
+}
+.ananymouse2 label {
   display: block;
-  padding: 0.7em 0;
-  width: 100%;
-  -moz-transition: -moz-transform 0.17s ease 0.06s;
-  -o-transition: -o-transform 0.17s ease 0.06s;
-  -webkit-transition: -webkit-transform 0.17s ease;
-  -webkit-transition-delay: 0.06s;
-  transition: transform 0.17s ease 0.06s;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  position: absolute;
+  top: 5px;
+  z-index: 1;
+  left: 5px;
+  background: #e6e6e6;
+  border-radius: 50px;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
-
-.input_field:focus {
-  opacity: 1;
-  -webkit-transition-delay: 0.28s;
-  transition-delay: 0.28s;
+.ananymouse2 label:after {
+  content: '';
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  background: #969696;
+  border-radius: 50px;
 }
-
-.input_field:focus + .input_label .input_content {
-  -moz-transform: translate3d(0, -30px, 0);
-  -ms-transform: translate3d(0, -30px, 0);
-  -webkit-transform: translate3d(0, -30px, 0);
-  transform: translate3d(0, -30px, 0);
-  -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
-  transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+.ananymouse2 input[type=checkbox] {
+  visibility: hidden;
 }
-
-.input_field:focus + .input_label:before,
-.input_label:before {
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
+.ananymouse2 input[type=checkbox]:checked + label {
+  left: 44px;
 }
-
-.input_field:focus + .input_label:before,
-.input_label:before {
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
+.ananymouse2 input[type=checkbox]:checked + label:after {
+  background: #fa4646;
 }
-
-.input_field:focus + .input_label:after,
-.input_label:after {
-  -webkit-transform: scale3d(1, 1, 1);
-  transform: scale3d(1, 1, 1);
-  -webkit-transition-delay: 0.3s;
-  transition-delay: 0.3s;
-  -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
-  transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+.ananymouse2 input[type=checkbox]:checked + label + h6 {
+  color: #fa4646;
 }

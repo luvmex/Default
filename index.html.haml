@@ -4,10 +4,14 @@
 	%link{:rel => "stylesheet",:href  => "css/index.css"}
 %body
 	.container
-		- 2.times do
-			.input_jiro
-				%input.input_field{:type => "text", :id => "input-00", :autofocus => true}
-				%label.input_label{:for => "input-00"}
-					.input_content= lorem_name
+		/ - 2.times do
+		/ 	.input_jiro
+		/ 		%input.input_field{:type => "text", :id => "input-00", :autofocus => true}
+		/ 		%label.input_label{:for => "input-00"}
+		/ 			.input_content= lorem_name
 				
-
+	.ananybox
+		.ananymouse2
+			%input{:type => 'checkbox', :value => 'None', :id => 'ananymouse2', :name => 'check', :checked => true}
+			%label{:for => 'ananymouse2'}
+			%h6 Ananymouse
